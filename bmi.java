@@ -1,9 +1,8 @@
-
-package playground;
+package bmi;
 
 import java.util.Scanner;
 
-public class playground{
+public class bmiexec{
 	
 public static void main(String[] args) {
 	System.out.println("Welcome to Aaron's BMI/Body mass index calculator");
@@ -25,18 +24,10 @@ public static void main(String[] args) {
 				
 					if (bmi < 18.5) {
 						System.out.println(" You're considered underweight.");}
-						else {}
+						else if (bmi < 24.9 && bmi > 18.5) {System.out.println(" You're considered healthy.");}
+						else if (bmi < 29.9 && bmi > 25) {System.out.println(" You're considered overweight.");}
+						else if (bmi > 30) {System.out.println(" You're considered obese.");}
 					
-					if (bmi < 24.9 && bmi > 18.5) {
-						System.out.println(" You're considered healthy.");}
-						else {}
-					
-					if (bmi < 29.9 && bmi > 25)  {
-						System.out.println(" You're considered overweight.");}
-						else {}
-					
-					if (bmi > 30) {
-						System.out.println(" You're considered obese.");}
 			} // <--this brace ends the pounds and inches option (when user inputs 1)
 			
 else  			    {System.out.println("Enter your weight in kilograms");
@@ -51,21 +42,11 @@ else  			    {System.out.println("Enter your weight in kilograms");
 		System.out.print(bmi2);
 		System.out.print(" is your BMI.");
 			
-				if (bmi2 < 18.5) {
-					System.out.println(" You're considered underweight.");}
-					else {}
-				
-				if (bmi2 < 24.9 && bmi2 > 18.5) {
-					System.out.println(" You're considered healthy.");}
-					else {}
-				
-				if (bmi2 < 29.9 && bmi2 > 25)  {
-					System.out.println(" You're considered overweight.");}
-					else {}
-				
-				if (bmi2 > 30) {
-					System.out.println(" You're considered obese.");
+		if (bmi2 < 18.5) {
+			System.out.println(" You're considered underweight.");}
+			else if (bmi2 < 24.9 && bmi2 > 18.5) {System.out.println(" You're considered healthy.");}
+			else if (bmi2 < 29.9 && bmi2 > 25) {System.out.println(" You're considered overweight.");}
+			else if (bmi2 > 30) {System.out.println(" You're considered obese.");}
 			}
 			} // this brace end the kilograms and centimeters option (when user inputs anything except 1)
 	}
-}
